@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Starfax</title>
+    <!-- Fontastic -->
+    <link href="https://file.myfontastic.com/DoLqdNsyJJa8D2TPbM6wEb/icons.css" rel="stylesheet">
+    <script>
+        const STELLAR_ACCIDENTS = 'stellaraccidents';
+        const PIRATE_HISTORY = 'piratehistory';
+        const MANY_PILOTS = 'manypilots';
+
+        var tagsToIcons = function(arr){
+            var iconHtml = '';
+
+            //If they do not have many pilots, then they get the starfax one icon
+            if(arr.indexOf(MANY_PILOTS) === -1) {
+                iconHtml += '<span className=\'icon-one\'></span>';
+            }
+
+            //Generate icons based on the ship's tags
+            iconHtml += arr.reduce(function(html, item){
+                switch (item) {
+                    case STELLAR_ACCIDENTS:
+                        html = html + '<span className=\'icon-accident\'></span>';
+                        break;
+                    case PIRATE_HISTORY:
+                        html = html + '<span className=\'icon-pirate\'></span>';
+                        break;
+                    default:
+                }
+                return html;
+            }, '');
+
+            return iconHtml;
+        }
+        // console.debug(arr)
+
+        // console.log(tagsToIcons(['piratehistory','a','b','c']));
+    </script>
+</head>
+<body>
+<div id="app"></div>
+<script src="/bundle.js"></script>
+</body>
+</html>
