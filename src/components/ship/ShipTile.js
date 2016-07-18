@@ -5,7 +5,7 @@ const divStyle = { maxHeight: '200px' };
 
 const ShipTile = ({ship, onChange, onSave, saving, errors}) => {
 
-    function onePilot(tags) {
+    function onePilot(tag) {
         switch (tag) {
             case consts.STELLAR_ACCIDENTS:
                 return consts.ICON_ACCIDENT;

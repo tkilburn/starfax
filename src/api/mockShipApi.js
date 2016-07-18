@@ -7,7 +7,7 @@ const ships = [
   {
     id: 'xwing',
     shipName: 'X-Wing',
-    shipPrice: '2500000',
+    shipPrice: '2,500,000',
     shipDescription: 'This is X-Wing barely made it out of the Battle of Yavin.  It took a beating, but she still has life left in her.',
     img: 'xwing',
     tags: ['stellaraccidents']
@@ -15,7 +15,7 @@ const ships = [
   {
     id: 'ywing',
     shipName: 'Y-Wing',
-    shipPrice: '3500000',
+    shipPrice: '3,500,000',
     shipDescription: 'This is a Y-Wing, not as cool as a X-Wing, but it has a clean service history.',
     img: 'ywing',
     tags: ['onepilot']
@@ -23,7 +23,7 @@ const ships = [
   {
     id: 'millenniumfalcon',
     shipName: 'Millennium Falcon',
-    shipPrice: '18500000',
+    shipPrice: '33,500,000',
     shipDescription: 'A good ship, but looks to have a shady history of smuggling, it was won in a card game after all...',
     img: 'millenniumfalcon',
     tags: ['piratehistory']
@@ -31,7 +31,7 @@ const ships = [
   {
     id: 'viper2',
     shipName: 'Viper Mk II',
-    shipPrice: '2800000',
+    shipPrice: '2,800,000',
     shipDescription: 'Starbuck managed to bring this on back in one piece.',
     img: 'viper2',
     tags: ['onepilot','stellaraccidents']
@@ -39,7 +39,7 @@ const ships = [
   {
     id: 'viper7',
     shipName: 'Viper Mk VII',
-    shipPrice: '4700000',
+    shipPrice: '4,700,000',
     shipDescription: 'A good ship, just be careful of the security patch.',
     img: 'viper7',
     tags: ['onepilot']
@@ -47,10 +47,26 @@ const ships = [
   {
     id: 'arwing',
     shipName: 'Arwing',
-    shipPrice: '4800000',
+    shipPrice: '4,800,000',
     shipDescription: 'Features a G Diffuser System!',
     img: 'arwing',
     tags: ['onepilot']
+  },
+  {
+    id: 'wolfen',
+    shipName: 'Wolfen',
+    shipPrice: '4,200,000',
+    shipDescription: 'Ship was owned by the evil Star Wolf!',
+    img: 'wolfen',
+    tags: ['onepilot','piratehistory']
+  },
+  {
+    id: 'normandy',
+    shipName: 'SSV Normandy',
+    shipPrice: '56,000,000',
+    shipDescription: 'A prototype "deep scout" frigate.',
+    img: 'normandy',
+    tags: ['']
   }
 ];
 
